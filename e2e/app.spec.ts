@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.beforeEach(async ({ page }) => {
   await page.route('https://api.frankfurter.dev/**', (route) =>
     route.fulfill({
-      json: { base: 'USD', quote: 'EUR', rate: 0.9, date: '2025-01-01' },
+      json: { base: 'USD', quote: 'EUR', rate: 0.9, date: '2026-09-01' },
     }),
   );
 });
